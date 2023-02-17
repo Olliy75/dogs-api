@@ -5,6 +5,6 @@ const Dog = sequelize.define('dog', {
   breed: Sequelize.STRING,
   color: Sequelize.STRING,
   description: Sequelize.STRING,
-});
+},{timestamps: false});
 
 module.exports = { Dog };
