@@ -53,7 +53,7 @@ describe('Endpoints', () => {
                 .delete(`/dogs/1`)
             expect(response.status).toBe(200);
             const deleted = await Dog.findByPk(1);
-            expect(deleted).toBeFalsy();
+            expect(deleted).toBeNull();
         });
     });
 });
